@@ -31,8 +31,7 @@ font-family: ${theme.fonts.body}
 
 const hint = (theme) => `
  font-size: ${theme.fontSizes.body}
- font-family:${theme.fonts.light}
- font-weight:${theme.fontWeights.light}
+ color: ${theme.colors.ui.secondary}
 
  `;
 
@@ -47,7 +46,7 @@ const title = (theme) => `
 font-family:${theme.fonts.heading}
  font-size: ${theme.fontSizes.h5}
    font-weight:${theme.fontWeights.bold}
-  
+  color:${theme.colors.ui.primary}
  `;
 const header = (theme) => `
  font-size: ${theme.fontSizes.title}
@@ -56,7 +55,7 @@ font-weight:${theme.fontWeights.bold}
 `;
 
 const button = (theme, inverted) => `
-color: ${inverted ? theme.colors.ui.brand : theme.colors.ui.quaternary}
+color: ${inverted ? theme.colors.brand.primary : theme.colors.ui.quaternary}
 font-size: ${theme.fontSizes.body}
 
 font-weight:${theme.fontWeights.regular}
@@ -79,7 +78,7 @@ const variants = {
   body,
   hint,
   title,
-  // caption,
+  //  caption,
   button,
   success,
   label,
