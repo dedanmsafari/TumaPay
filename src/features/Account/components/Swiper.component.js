@@ -3,7 +3,6 @@ import Text from "../../../components/text/text.component";
 import { Image } from "react-native";
 
 const SwiperContainer = ({ source, title, caption }) => {
-  console.log(source);
   return (
     <SwiperContainerStyles>
       <Image style={{ width: 330, height: 330 }} source={source} />
