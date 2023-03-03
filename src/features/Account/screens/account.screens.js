@@ -2,7 +2,11 @@ import React from "react";
 import Swiper from "react-native-swiper";
 import Spacer from "../../../components/spacer/spacer.component";
 import Text from "../../../components/text/text.component";
-import { LogInButton, SignUpButton, ButtonsContainer } from "./account.styles";
+import {
+  ContainedButton,
+  OutlinedButton,
+  ButtonsContainer,
+} from "./account.styles";
 import { colors } from "../../../infrastructure/theme/colors";
 import SwiperContainer from "../components/Swiper.component";
 
@@ -30,7 +34,7 @@ const WalkthroughData = [
   },
 ];
 
-const AccountScreen = () => {
+const AccountScreen = ({ navigation }) => {
   return (
     <>
       <Swiper
@@ -52,15 +56,21 @@ const AccountScreen = () => {
       </Swiper>
       <Spacer position="top" size="medium" />
       <ButtonsContainer>
-        <SignUpButton activeOpacity={0.5}>
+        <ContainedButton
+          activeOpacity={0.5}
+          onPress={() => navigation.navigate("Register")}
+        >
           <Text variant="button">Sign Up</Text>
-        </SignUpButton>
+        </ContainedButton>
         <Spacer size="medium" />
-        <LogInButton activeOpacity={0.5}>
+        <OutlinedButton
+          activeOpacity={0.5}
+          onPress={() => navigation.navigate("Login")}
+        >
           <Text variant="button" inverted>
             Log In
           </Text>
-        </LogInButton>
+        </OutlinedButton>
       </ButtonsContainer>
     </>
   );
