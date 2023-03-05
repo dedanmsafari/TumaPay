@@ -15,7 +15,7 @@ import {
   Roboto_400Regular,
   Roboto_500Medium,
 } from "@expo-google-fonts/roboto";
-import AccountNavigator from "./src/infrastructure/navigation/account.navigator";
+import Navigation from "./src/infrastructure/navigation";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -52,7 +52,7 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <AccountNavigator onReady={onLayoutRootView} />
+        <Navigation onReady={onLayoutRootView} />
         <ExpoStatusBar style="auto" />
       </ThemeProvider>
     </>
