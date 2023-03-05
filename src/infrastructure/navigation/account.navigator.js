@@ -9,19 +9,17 @@ import RegisterNavigator from "./register.navigator";
 import { NavigationContainer } from "@react-navigation/native";
 const Stack = createStackNavigator();
 
-const AccountNavigator = ({ onReady }) => {
+const AccountNavigator = () => {
   return (
-    <NavigationContainer onReady={onReady}>
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name="Main" component={AccountScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Register" component={RegisterNavigator} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="Main" component={AccountScreen} />
+      <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Register" component={RegisterNavigator} />
+    </Stack.Navigator>
   );
 };
 
