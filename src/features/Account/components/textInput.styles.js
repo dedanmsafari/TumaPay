@@ -9,7 +9,7 @@ export const StyledInputWrapper = styled.View`
 export const StyledInputLabel = styled.Text`
   font-size: 14px; /* equivalent to 1rem */
   font-weight: 600;
-  color: ${colors.text.secondary};
+  color: ${colors.ui.secondary};
   margin-bottom: 8px;
 `;
 
