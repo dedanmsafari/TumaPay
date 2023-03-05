@@ -43,6 +43,12 @@ export const LoginIconContainer = styled.View`
   padding: 30px 0px 10px 0px;
   margin-left: -3px;
 `;
+export const TitleContainer = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: gray; */
+  align-items: baseline;
+`;
 
 export const TextContainer = styled.View`
   flex-direction: row;
