@@ -34,6 +34,17 @@ const hint = (theme) => `
  color: ${theme.colors.ui.secondary}
 
  `;
+const small = (theme) => `
+ font-size: ${theme.fontSizes.caption}
+ color: ${theme.colors.ui.secondary}
+
+ `;
+const steps = (theme) => `
+
+ font-size: ${theme.fontSizes.body}
+ color: ${theme.colors.text.secondary}
+ 
+ `;
 
 const success = (theme) => `
  font-family:${theme.fonts.medium}
@@ -78,8 +89,10 @@ const variants = {
   body,
   hint,
   title,
+  steps,
   //  caption,
   button,
+  small,
   success,
   label,
   header,
