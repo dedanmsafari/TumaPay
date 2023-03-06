@@ -40,10 +40,22 @@ const small = (theme) => `
 
  `;
 const steps = (theme) => `
-
  font-size: ${theme.fontSizes.body}
  color: ${theme.colors.text.secondary}
  
+ `;
+
+const salutation = (theme) => `
+ font-weight:${theme.fontWeights.bold}
+ color: ${theme.colors.brand.primary}
+ font-family:${theme.fonts.heading}
+ font-size: ${theme.fontSizes.title}
+ `;
+const salutationcaption = (theme) => `
+ font-weight:${theme.fontWeights.bold}
+ color: ${theme.colors.text.primary}
+ font-family:${theme.fonts.heading}
+ font-size: ${theme.fontSizes.title}
  `;
 
 const success = (theme) => `
@@ -93,6 +105,8 @@ const variants = {
   //  caption,
   button,
   small,
+  salutation,
+  salutationcaption,
   success,
   label,
   header,
