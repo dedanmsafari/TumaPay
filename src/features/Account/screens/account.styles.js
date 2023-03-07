@@ -48,6 +48,7 @@ export const TitleContainer = styled.View`
   justify-content: space-between;
   /* background-color: gray; */
   align-items: baseline;
+  padding-top: 5px;
 `;
 
 export const TextContainer = styled.View`
