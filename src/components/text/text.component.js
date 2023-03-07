@@ -4,7 +4,7 @@ const defaultStyles = (theme) => `
 font-family: ${theme.fonts.body}
 font-weight:${theme.fontWeights.regular}
 color: ${theme.colors.text.primary}
-line-height:22px
+
 flex-wrap:wrap
 margin-top:0px;
 margin-bottom:0px;
@@ -41,7 +41,7 @@ const small = (theme) => `
 
  `;
 const steps = (theme) => `
- font-size: ${theme.fontSizes.body}
+ font-size: ${theme.fontSizes.button}
  color: ${theme.colors.text.secondary}
  
  `;
@@ -68,7 +68,7 @@ const success = (theme) => `
 
 const title = (theme) => `
 font-family:${theme.fonts.heading}
- font-size: ${theme.fontSizes.h5}
+ font-size: ${theme.fontSizes.title}
    font-weight:${theme.fontWeights.bold}
   color:${theme.colors.ui.primary}
  `;
