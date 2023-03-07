@@ -17,7 +17,7 @@ const HeroBlock = () => {
           Connecting the World
         </Text>
         <Spacer size="medium" />
-        <Text style={{ color: colors.text.inverse }}>
+        <Text style={{ color: colors.text.inverse, lineHeight: 22 }}>
           A better way to move money globally. Cheap, Fast, Secure
         </Text>
         <Spacer size="medium" />
@@ -25,6 +25,7 @@ const HeroBlock = () => {
           <Text variant="button" inverted>
             Send Money
           </Text>
+          <Spacer position="right" />
           <Ionicons
             name="arrow-forward"
             size={20}
