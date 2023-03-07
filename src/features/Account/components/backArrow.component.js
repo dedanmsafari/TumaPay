@@ -17,7 +17,7 @@ const BackArrow = ({ title, caption, step }) => {
           <Ionicons name="arrow-back" size={24} color={colors.ui.primary} />
         </TouchableOpacity>
       </LoginIconContainer>
-      <Spacer size="medium" />
+      <Spacer size="small" />
       <TitleContainer>
         <Text variant="title">{title}</Text>
         {step && <Text variant="steps">{step}</Text>}
