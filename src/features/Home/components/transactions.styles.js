@@ -18,7 +18,7 @@ export const TransactionHolder = styled.View`
   background-color: ${colors.bg.tertiary};
   border: 1px solid ${colors.brand.secondary};
   padding: 5px 10px;
-  height: 100px;
+  height: 80px;
   justify-content: space-between;
 `;
 
