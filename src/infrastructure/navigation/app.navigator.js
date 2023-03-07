@@ -47,10 +47,10 @@ export default function AppNavigator() {
     <Tab.Navigator
       screenOptions={createScreenOptions}
       activeColor={colors.brand.primary}
-      inactiveColor={colors.ui.secondary}
+      inactiveColor={colors.text.secondary}
       barStyle={{
         position: "relative",
-
+        height: 72,
         backgroundColor: colors.bg.primary,
         borderTopWidth: 1,
         borderTopColor: colors.ui.tertiary,
