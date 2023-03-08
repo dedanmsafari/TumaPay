@@ -8,4 +8,4 @@ export const ProfileTab = styled.View`
   align-items: center;
 `;
 export const TextContainer = styled.View``;
-export const IconContainer = styled.View``;
+export const IconContainer = styled.TouchableOpacity``;
