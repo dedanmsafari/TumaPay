@@ -41,7 +41,7 @@ const WalletNavigator = () => {
           cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
         }}
       >
-        <Stack.Screen name="Wallet" component={WalletScreen} />
+        <Stack.Screen name="My Wallet" component={WalletScreen} />
       </Stack.Navigator>
     </View>
   );
