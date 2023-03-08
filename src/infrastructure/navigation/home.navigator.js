@@ -5,7 +5,7 @@ import {
   CardStyleInterpolators,
 } from "@react-navigation/stack";
 import HomeScreen from "../../features/Home/screens/home.screens";
-import ProfileScreen from "../../features/Profile/screens/profile.screens";
+import ProfileNavigator from "./profile.navigator";
 
 import { StyledSafeAreaView } from "../../utils/safeArea.util.component";
 import styled from "styled-components/native";
@@ -22,19 +22,17 @@ const HomeSafeAreaView = styled(StyledSafeAreaView)`
 const HomeNavigator = () => {
   return (
     <View style={{ flex: 1, backgroundColor: "white" }}>
-      <HomeSafeAreaView>
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-            gestureEnabled: true,
-            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
-          }}
-        >
-          <Stack.Screen name="HomeScreen" component={HomeScreen} />
-          <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
-          <Stack.Screen name="TransferScreen" component={TransferNavigator} />
-        </Stack.Navigator>
-      </HomeSafeAreaView>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+          gestureEnabled: true,
+          cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        }}
+      >
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="TransferScreen" component={TransferNavigator} />
+        <Stack.Screen name="ProfileScreen" component={ProfileNavigator} />
+      </Stack.Navigator>
     </View>
   );
 };
