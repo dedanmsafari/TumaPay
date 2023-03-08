@@ -9,7 +9,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "../../../infrastructure/theme/colors";
 
-const HeroBlock = () => {
+const HeroBlock = ({ navigation }) => {
   return (
     <HeroContainer>
       <TextBlock>
@@ -21,7 +21,12 @@ const HeroBlock = () => {
           A better way to move money globally. Cheap, Fast, Secure
         </Text>
         <Spacer size="medium" />
-        <ContainedButton activeOpacity={0.7}>
+        <ContainedButton
+          activeOpacity={0.7}
+          onPress={() =>
+            navigation.navigate("Transfer", { screen: "Send Money" })
+          }
+        >
           <Text variant="button" inverted>
             Send Money
           </Text>
