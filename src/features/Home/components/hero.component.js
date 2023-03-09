@@ -18,7 +18,7 @@ const HeroBlock = ({ navigation }) => {
         </Text>
         <Spacer size="medium" />
         <Text style={{ color: colors.text.inverse, lineHeight: 22 }}>
-          A better way to move money globally. Cheap, Fast, Secure
+          A Better way to move money globally. Cheap, Fast, Secure
         </Text>
         <Spacer size="medium" />
         <ContainedButton
