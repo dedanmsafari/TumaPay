@@ -24,6 +24,21 @@
     },
     "web": {
       "favicon": "./assets/appIcon.png"
+    },
+    "plugins": ["sentry-expo"],
+
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "tuma-pay",
+            "project": "tumapay",
+            "authToken": "05181c889c404591a28eec4b238df457af7aeac052364fb8be8fba9fc0bbb6e1",
+            "setCommits": true
+          }
+        }
+      ]
     }
   }
 }
