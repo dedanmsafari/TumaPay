@@ -1,4 +1,5 @@
 import React, { useEffect, useCallback } from "react";
+import * as Sentry from "sentry-expo";
 import * as SplashScreen from "expo-splash-screen";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./src/infrastructure/theme";
@@ -16,6 +17,12 @@ import {
   Roboto_500Medium,
 } from "@expo-google-fonts/roboto";
 import Navigation from "./src/infrastructure/navigation";
+
+Sentry.init({
+  dsn: "https://0940628988424d52a23dc679e589fd34@o285035.ingest.sentry.io/4504808466153472",
+  enableInExpoDevelopment: true,
+  debug: true, // If `true`, Sentry will try to print out useful debugging information if something goes wrong with sending the event. Set it to `false` in production
+});
 
 SplashScreen.preventAutoHideAsync();
 
